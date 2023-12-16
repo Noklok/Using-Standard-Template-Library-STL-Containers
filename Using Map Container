@@ -1,0 +1,21 @@
+#include <iostream>
+#include <map>
+#include <string>
+
+int main() {
+    std::map<int, std::string> myMap;
+
+    myMap[1] = "One";
+    myMap[2] = "Two";
+    myMap[3] = "Three";
+
+    // Accessing elements
+    std::cout << "Element at key 2: " << myMap[2] << std::endl;
+
+    // Iterating through map
+    for (const auto& pair : myMap) {
+        std::cout << "Key: " << pair.first << ", Value: " << pair.second << std::endl;
+    }
+
+    return 0;
+}
